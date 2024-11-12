@@ -53,11 +53,11 @@ docker pull jordin13/java-app:nombre de etiqueta
 
 ## Create image
 Create the docker image with the following command:
-docker build -t springboot-hello-world .
+docker pull jordin13/java-app:latest
 
 ## Run the Docker Image
 Once the image is downloaded, you can run a container with the following command:
-docker run -p 8080:8080 --name AppJava springboot-hello-world
+docker run -d -p 8080:8080 --name java-app jordin13/java-app:latest
 
 ## Access the Project
 Open your browser and go to the following address:
